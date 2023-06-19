@@ -5,12 +5,14 @@ public class Tasks {
     String name;
     String description;
     String deadlineDate;
+    String isDone;
 
-    public Tasks(Long id, String name, String description, String deadlineDate) {
+    public Tasks(Long id, String name, String description, String deadlineDate, String isDone) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.deadlineDate = deadlineDate;
+        this.isDone = isDone;
     }
 
     public Tasks() {
@@ -46,5 +48,13 @@ public class Tasks {
 
     public void setDeadlineDate(String deadlineDate) {
         this.deadlineDate = deadlineDate;
+    }
+
+    public String getIsDone() {
+        return isDone;
+    }
+
+    public void setIsDone(String isDone) {
+        this.isDone = isDone;
     }
 }

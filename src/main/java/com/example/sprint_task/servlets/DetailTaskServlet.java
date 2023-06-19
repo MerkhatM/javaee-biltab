@@ -5,16 +5,18 @@ import com.example.sprint_task.dbManager.DBManager;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
-import java.io.IOException;
-import java.util.ArrayList;
 
-@WebServlet(name = "HomeServlet", value = "/home")
-public class HomeServlet extends HttpServlet {
+import java.io.IOException;
+
+@WebServlet(name = "DetailTaskServlet", value = "/detailTask")
+public class DetailTaskServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        ArrayList<Tasks> tasks= DBManager.getAllTasks();
-        request.setAttribute("tasks",tasks);
-        request.getRequestDispatcher("index.jsp").forward(request,response);
+        Long id=Long.parseLong(request.getParameter("idshka"));
+        Tasks task=DBManager.getTask(id);
+        request.setAttribute("zadachka",task);
+        request.getRequestDispatcher("detailTask.jsp").forward(request,response);
     }
+
 
 }
