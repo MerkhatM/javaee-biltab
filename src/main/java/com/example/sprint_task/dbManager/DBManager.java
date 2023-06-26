@@ -8,9 +8,9 @@ public class DBManager {
     public static ArrayList<Tasks> tasks=new ArrayList<>();
 
     static {
-        tasks.add(new Tasks(1L,"Создать Веб приложение на Java EE","fefwopewfrf","23-10-2021","Да"));
-        tasks.add(new Tasks(2L,"Изучить Реакт","dsffsdfd","23-10-2021","Нет"));
-        tasks.add(new Tasks(3L,"Убраться дома","vsgfgfs","24-10-2021","Да"));
+        tasks.add(new Tasks(1L,"Создать Веб приложение на Java EE","fefwopewfrf","2021-10-21","Да"));
+        tasks.add(new Tasks(2L,"Изучить Реакт","dsffsdfd","2021-02-27","Нет"));
+        tasks.add(new Tasks(3L,"Убраться дома","vsgfgfs","2021-08-10","Да"));
 
     }
     static Long idshka=4L;

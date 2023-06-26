@@ -26,7 +26,7 @@
             </div>
             <div class="mb-3">
                 <label for="dateInput" class="form-label">Крайний срок: </label>
-                <input type="date" class="form-control" id="dateInput" name="dateInput"  placeholder="<%=task.getDeadlineDate()%>">
+                <input type="date" class="form-control" id="dateInput" name="dateInput"  value="<%=task.getDeadlineDate()%>">
             </div>
             <div class="mb-3">
                 <label for="selectInput" class="form-label">Выполнено: </label>
